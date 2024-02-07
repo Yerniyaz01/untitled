@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div style="display: flex; flex-direction: row">
+      <div style="display: flex; flex-direction: row">
+        Login:
+      </div>
+      <div style="display: flex; flex-direction: row">
+        <input type="text" placeholder="Login" style="margin-left: 45px; border: 1px solid black" id = "login">
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row">
+      <div style="display: flex; flex-direction: row">
+        Password:
+      </div>
+      <div style="display: flex; flex-direction: row">
+        <input type="password" placeholder="Password" style="margin-left: 22px; border: 1px solid black" id = "password">
+      </div>
+    </div>
+    <div>
+      <button style="margin-left: 180px; margin-top: 20px; color: white; background-color: dodgerblue" onclick="changeButton()">
+        SIGN IN
+      </button>
+    </div>
+
+  <script>
+    function changeButton() {
+      let log = login.value;
+      let pass = password.value;
+
+      if (log == "Ilyas" && pass == "qwerty") {
+        document.body.innerHTML = "<h1>You are authenticated</h1>"
+      } else {
+        login.style.border = "1px solid red";
+        password.style.border = "1px solid red";
+      }
+    }
+
+  </script>
+
+</body>
+</html>

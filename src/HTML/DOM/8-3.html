@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+    .place {display: flex; flex-direction: row; }
+    ul {list-style: none; }
+    button {background-color: dodgerblue; color: white; margin-left: 40px}
+  </style>
+
+</head>
+<body>
+
+  <div class="place">
+    <ul>
+      <li>
+        CARD:
+      </li>
+    </ul>
+    <input type="text" style="margin-left: 105px" placeholder="----|----|----|----" id="cards">
+  </div>
+
+  <div class="place">
+    <ul>
+      <li>
+        NAME SURNAME:
+      </li>
+    </ul>
+    <input type="text" style="margin-left: 20px" placeholder="NAME SURNAME" id="names">
+  </div>
+
+  <div class="place">
+    <ul>
+      <li>
+        CVV:
+      </li>
+    </ul>
+    <input type="text" style="margin-left: 117px" placeholder="---" id="cvv">
+  </div>
+
+  <div class="place">
+    <button onclick="getInfo()">
+      COMPLETE
+    </button>
+  </div>
+
+  <script>
+    let card = 4413434135342424;
+    let name = ILYAS;
+    let surname = ZHUANYSHEV;
+    let CVV = 123;
+
+    let cards = cards.value;
+    let names = names.value;
+    let cvv = cvv.value;
+    function getInfo() {
+      alert(cards)
+      alert(names)
+      alert(cvv)
+      if (card == cards && name == names && CVV == cvv) {
+
+      }
+    }
+  </script>
+
+</body>
+</html>

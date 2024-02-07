@@ -1,0 +1,35 @@
+package JavaSE.TestMassiv;
+
+import java.util.Scanner;
+
+public class Test10 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int size = in.nextInt();
+        int[] nums = new int[size];
+        int sum=0;
+
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = in.nextInt();
+        }
+        for (int a = 0; a< nums.length; a++) {
+            sum = sum+nums[a];
+        }
+        System.out.print(sum + " ");
+
+
+    }
+}
+
+//Программа запрашивает число n. Далее, мы вводим n чисел и сохраняем все введенные числа в массив. Выведите в конце сумму всех элементов массива.
+//Ввод:
+//8
+//4 9 2 5 8 7 11 16
+//Вывод:
+//62
+//
+//Ввод:
+//10
+//1 2 3 4 5 6 7 8 9 10
+//Вывод:
+//55

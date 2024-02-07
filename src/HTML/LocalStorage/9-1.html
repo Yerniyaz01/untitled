@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+      .line{display: flex; flex-direction: row}
+      .table {margin: 20px}
+      button {width: 80px; height: 40px}
+  </style>
+</head>
+<body>
+<table style="border: 1px solid black">
+  <tbody>
+    <tr>
+      <td>
+        <div class="line">
+           <div class="table">
+            NAME:
+           </div>
+          <input type="text" class="table" id="Name">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="line">
+          <div class="table">
+            SURNAME:
+          </div>
+          <input type="text" class="table" id="Surname">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="line">
+          <div class="table">
+            COUNTRY:
+          </div>
+          <select class="table" id="Country">
+            <option value="KAZAKHSTAN">KAZAKHSTAN</option>
+            <option value="RUSSIA">RUSSIA</option>
+            <option value="USA">USA</option>
+            <option value="KYRGYZSTAN">KYRGYZSTAN</option>
+            <option value="FRANCE">FRANCE</option>
+            <option value="ENGLAND">ENGLAND</option>
+            <option value="GERMANY">GERMANY</option>
+          </select>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="line">
+          <div class="table">
+            PHONE NUMBER:
+          </div>
+          <input type="text" class="table" id="Phone">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button>
+          REGISTER
+        </button>
+        <button id="btn" onclick="setLocal()">
+          SAVE TO DRAFT
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  Name.value = localStorage.getItem('name');
+  Surname.value = localStorage.getItem('name');
+  Country.value = localStorage.getItem('name');
+  Phone.value = localStorage.getItem('name');
+  function setLocal() {
+    localStorage.setItem('name',Name.value);
+    localStorage.setItem('surname',Surname.value);
+    localStorage.setItem('country',Country.value);
+    localStorage.setItem('phoneNumber',Phone.value);
+  }
+
+</script>
+
+</body>
+</html>

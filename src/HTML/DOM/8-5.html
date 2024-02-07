@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .image {width: 50px; height: 70px}
+        .bigImg {width: 500px; height: 600px}
+    </style>
+</head>
+<body>
+    <div>
+      <img src = "https://i.pinimg.com/236x/0e/bd/26/0ebd262c4b7f69f7ec915dbd8509328f.jpg" class="bigImg" id="image">
+    </div>
+    <div>
+      <button onclick="button1()"><img src = "https://i.pinimg.com/236x/0e/bd/26/0ebd262c4b7f69f7ec915dbd8509328f.jpg" class="image" id="img1"></button>
+      <button onclick="button2()"><img src = "https://n1s2.hsmedia.ru/5b/ac/b7/5bacb7bac1d191b6165700db8d0231de/600x600_1_ac5d92e47fa557564c96a05c48d89fe5@1200x1200_0xac120004_10971449351678722049.jpeg" class="image" id="img2"></button>
+      <button onclick="button3()"><img src = "https://i.pinimg.com/236x/2a/f5/3d/2af53d8f1be483dd0e05b7b18142c33c.jpg" class="image" id="img3"></button>
+      <button onclick="button4()"><img src = "https://img.freepik.com/free-photo/a-cupcake-with-a-strawberry-on-top-and-a-strawberry-on-the-top_1340-35087.jpg" class="image" id="img4"></button>
+      <button onclick="button5()"><img src = "https://s00.yaplakal.com/pics/pics_original/5/0/6/17827605.jpg" class="image" id="img5"></button>
+      <button onclick="button6()"><img src = "https://i.ucrazy.ru/files/pics/2023.10/2023-10-17-21-53-072.webp" class="image" id="img6"></button>
+      <button onclick="button7()"><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-YTaXf90G-8IWx6llFRzjmm0ctLDUlzwKg&usqp=CAU" class="image" id="img7"></button>
+    </div>
+
+    <script>
+      let img = [];
+      img.push("https://i.pinimg.com/236x/0e/bd/26/0ebd262c4b7f69f7ec915dbd8509328f.jpg",
+              "https://n1s2.hsmedia.ru/5b/ac/b7/5bacb7bac1d191b6165700db8d0231de/600x600_1_ac5d92e47fa557564c96a05c48d89fe5@1200x1200_0xac120004_10971449351678722049.jpeg",
+              "https://i.pinimg.com/236x/2a/f5/3d/2af53d8f1be483dd0e05b7b18142c33c.jpg",
+              "https://img.freepik.com/free-photo/a-cupcake-with-a-strawberry-on-top-and-a-strawberry-on-the-top_1340-35087.jpg",
+              "https://s00.yaplakal.com/pics/pics_original/5/0/6/17827605.jpg",
+              "https://i.ucrazy.ru/files/pics/2023.10/2023-10-17-21-53-072.webp",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-YTaXf90G-8IWx6llFRzjmm0ctLDUlzwKg&usqp=CAU"
+      )
+      function button1() {
+        image.src = img[0];
+      }
+      function button2() {
+        image.src = img[1]
+      }
+      function button3() {
+        image.src = img[2]
+      }
+      function button4() {
+        image.src = img[3]
+      }
+      function button5() {
+        image.src = img[4]
+      }
+      function button6() {
+        image.src = img[5]
+      }
+      function button7() {
+        image.src = img[6]
+      }
+    </script>
+</body>
+</html>

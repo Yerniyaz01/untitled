@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = "stylesheet" href="/css/bootstrap.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+              <th>Введите сумму</th>
+              <th>KZT (tenge)</th>
+              <th>USD (dollar)</th>
+              <th>EUR (euro)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <input id="text" type="text" class="border border-1 border-dark-subtle bg-secondary-subtle">
+                <select id="select">
+                  <option id="KZT">KZT</option>
+                  <option id="USD">USD</option>
+                  <option id="EUR">EUR</option>
+                </select>
+              </td>
+              <td><p id="tenge" class="border border-1 border-dark-subtle bg-secondary-subtle">-</p></td>
+              <td><p id="dollar" class="border border-1 border-dark-subtle bg-secondary-subtle">-</p></td>
+              <td><p id="euro" class="border border-1 border-dark-subtle bg-secondary-subtle">-</p></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+
+        if (select == KZT) {
+            infoKZT();
+        }
+        function infoKZT() {
+            let kzt = text.value;
+            let usd = kzt / 453.96;
+            let eur = kzt / 494.79;
+
+        }
+        function infoUSD() {
+          let usd = text.value;
+          let kzt = usd / 0.0022;
+          let eur = usd / 1.09;
+
+        }
+        function infoEUR() {
+          let kzt = 0.0020;
+          let usd = 0.92;
+
+        }
+    </script>
+</body>
+</html>
